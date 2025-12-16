@@ -5,3 +5,8 @@ az login --service-principal --allow-no-subscriptions --username [YOUR_APP_ID] -
 az account get-access-token --scope "499b84ac-1321-427f-aa17-267ca6975798/.default"
 
 git clone https://[ACCESS_TOKEN]@dev.azure.com/[YOUR_ORG]/[YOUR_PROJECT]/_git/[YOUR_REPOSITORY]
+
+References:
+
+https://stackoverflow.com/questions/67639199/is-it-possible-to-use-service-principal-to-access-git-repository-on-azure
+https://medium.com/@oliverdevijt/stop-using-your-own-pat-in-pipelines-commit-to-azure-devops-with-a-service-principal-37d92aa3e232
