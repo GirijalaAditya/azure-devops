@@ -1,0 +1,7 @@
+# Clone Azure Repos using Service Principal
+
+az login --service-principal --allow-no-subscriptions --username [YOUR_APP_ID] --password [YOUR_CLIENT_SECRET] --tenant [YOUR_TENANT_ID]
+
+az account get-access-token --scope "499b84ac-1321-427f-aa17-267ca6975798/.default"
+
+git clone https://[ACCESS_TOKEN]@dev.azure.com/[YOUR_ORG]/[YOUR_PROJECT]/_git/[YOUR_REPOSITORY]
